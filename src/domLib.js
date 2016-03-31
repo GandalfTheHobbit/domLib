@@ -19,11 +19,9 @@
                 var x = d.getId(id);
                 if(type == "color" || type == "colour") {
                     x.style.background = data + " " + settings;
-                    console.log(data + " " + settings);
                 } else if (type == "image") {
                     var c = "url(\"" + data + "\")";
                     x.style.background = c + " " + settings;
-                    console.log(c + " " + settings)
                 }
             },
 
