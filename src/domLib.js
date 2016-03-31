@@ -11,6 +11,9 @@
             setTColour: function(colour,id) {
                 d.getId(id).style.color = colour;
             },
+            setTColor: function(colour,id) {
+                d.getId(id).style.color = colour;
+            },
             setSize: function(height,width,id) {
                 d.getId(id).style.height = height;
                 d.getId(id).style.width = width;
