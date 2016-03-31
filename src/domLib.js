@@ -19,12 +19,18 @@
                 d.getId(id).style.width = width;
             },
             setBackground: function(type, data, settings, id) {
-                var x = d.getId(id);
+                if(id=="document.body") {
+                    var x = document.body;
+                } else {
+                    var x = d.getId(id);
+                }
                 if(type == "color" || type == "colour") {
                     x.style.background = data + " " + settings;
                 } else if (type == "image") {
                     var c = "url(\"" + data + "\")";
                     x.style.background = c + " " + settings;
+                } else {
+                    console.log("The type you are trying to use does not exist")
                 }
             },
 
